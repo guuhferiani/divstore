@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+/* Variavel para as cores */
+:root{
+    --fundo-menu-lateral: #F2EDDC;
+    --fundo-claro:#516373;
+    --fundo-escuro:#011526;
+
+    --texto-escuro: #00070D;
+    --texto-claro:#F2EDDC;
+
+    --detalhes-claro: #91b2cf;
+    --detalhes-escuro: #132605;
+
+    /* --cor-transparente: rgba(0,255,0, 0.5); */
+}
+/* Mobile Menu */
+
+
+/* CSS Principal */
+body{
+    font-family: "Open", sans-serif;
+    /* color: #00070D; */
+    color: var(--texto-claro);
+    background: var(--fundo-escuro);
+}
+a {
+    color: var(--texto-claro);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--detalhes-claro);
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Calligraffitti", sans-serif;
+}
+/* cabeçalho */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    background: var(--fundo-menu-lateral);
+    transition: all ease-in-out 0.5s;
+    padding: 0 15px;
+    z-index: 99999;
+    overflow-y: auto;
+}
+.perfil img{
+    margin: 35px auto;
+    display: block;
+    width: 120px;
+    border: 2px solid var(--detalhes-claro);
+    box-shadow: 0px 0px 15px 5px rgb(26, 26, 26);
+}
