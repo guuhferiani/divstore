@@ -21,7 +21,7 @@
 body{
     font-family: "Open", sans-serif;
     /* color: #00070D; */
-    color: var(--texto-escuro);
+    color: var(--texto-claro);
     background: var(--fundo-escuro);
 }
 a {
@@ -148,6 +148,47 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active {
     overflow: hidden;
 }
-.mobile-nav-active #header  {
+.mobile-nav-active #header {
     left: 0;
+}
+/* HERO */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/hero-bg.jpg") top center;  /*inserir img no CSS*/
+    background-size: cover;
+}
+#hero::before{   /* pseudo elemento css */
+    content: "";
+    background: rgba(5, 13, 26, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1; /*sobrepor algum objeto/elemento*/
+}
+#hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-size: 700;
+    line-height: 56px;
+    color: var(--detalhes-icones);
+}
+#hero p {
+    color: var(--detalhes-icones);
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Open" sans-serif;
+}
+#hero p span {
+    color: var(--texto-claro);
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--detalhes-escuro);
 }
