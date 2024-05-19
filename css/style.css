@@ -180,6 +180,8 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 56px;
     color: var(--detalhes-icones);
     background: va(--fundo-escuro);
+    width: 120px;
+    height: 70px;
 }
 #hero p {
     color: var(--detalhes-icones);
