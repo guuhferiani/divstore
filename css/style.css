@@ -124,6 +124,12 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--detalhes-escuro);
 }/* fim Header */
 
+.nav-menu teste{
+ background: orange;
+    width:380px;
+    height:120px
+}
+
 /* nav mobile */
 .mobile-nav-toggle {
     position: fixed;
@@ -179,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 56px;
     color: var(--detalhes-icones);
-    box-shadow: 0 0 15px 25px #000;
+    box-shadow: 10px 0 15px 2px #000;
    
 }
 #hero p {
