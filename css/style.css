@@ -261,8 +261,8 @@ section {
     margin-bottom: 0;
 }
 /* sobre */
-.sobre .content h3 {
-    font-size: 30px;
+.sobre .container h3 {
+    font-size: 35px;
     font-weight: 500;
     color: var(--detalhes-icones);
 }
