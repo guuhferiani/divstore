@@ -284,3 +284,35 @@ section {
     color: var(--detalhes-icones);
     line-height: 0;
 }
+/*  Conquistas */
+.conquistas {
+    padding-bottom: 30px;
+}
+.conquistas .count-box {
+    padding: 30px;
+    width: 100%;
+}
+.conquistas .count-box i {
+    display: block;
+    font-size: 45px;
+    color: var(--detalhes-escuro);
+    float: left;
+    line-height: 0;
+}
+.conquistas .count-box span {
+    font-size: 50px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: var(--fundo-menu-lateral);
+    margin-left: 60px;
+}
+.conquistas .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: 'Helvetica', serif;
+    font-size: 16px;
+}
+.conquistas .count-box i:hover{
+    color: var(--texto-claro);
+}
