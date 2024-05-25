@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 320px;
+    width: 300px;
     background: var(--fundo-menu-lateral);
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     font-weight: 600;
     text-align: center;
-    font-family: "Calligraffitti", sans-serif;
+    font-family: "Open", sans-serif;
 }
 .perfil .social-links a {
     font-size: 20px;
@@ -80,6 +80,28 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--texto-claro);
     color: var(--fundo-menu-lateral);
     text-decoration: none;
+}
+/* principal */
+#main {
+    margin-left: 300px;
+}
+.container, 
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media (max-width: 1199px) {
+    #header {
+        left: -300px;
+    }
+    #main {
+        margin-left: 0;
+    }
+    .container,
+    .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
 /* menu Nav Desktop */
 .nav-menu {
@@ -133,7 +155,6 @@ h1, h2, h3, h4, h5, h6 {
     border: 0;
     font-size: 25px;
     transition: all 0.5s;
-    /* outline: none !important; */
     background: var(--fundo-claro);
     color: var(--fundo-menu-lateral);
     width: 40px;
@@ -178,17 +199,29 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
-    color: var(--detalhes-icones);   
+    color: var(--detalhes-icones);
 }
 #hero p {
     color: var(--detalhes-icones);
     margin-bottom: 50px;
     font-size: 26px;
     font-family: "Open" sans-serif;
+    background: rgba(31, 31, 31, 0.1);
 }
 #hero p span {
     color: var(--texto-claro);
     padding-bottom: 4px;
     letter-spacing: 1px;
     border-bottom: 3px solid var(--detalhes-escuro);
+}
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
 }
